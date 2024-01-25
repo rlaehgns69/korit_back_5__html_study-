@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form method="get" action="">
+
+    <div>
+      <label for="username">아이디</label>
+    <input type="text" id="username" name="username" placeholder="아이디를 입력하세요.">
+    </div>
+    
+    <div>
+      <label for="password">비밀번호</label>
+      <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요.">
+    </div>
+    
+  
+    <div>
+      <input type="radio" id="age10" name="age" value="10" />
+      <label for="age10">10대</label>
+      <input type="radio" id="age20" name="age" value="20" />
+      <label for="age20">20대</label>
+      <input type="radio" id="age30" name="age" value="30" />
+      <label for="age30">30대</label>
+    </div>
+    <div>
+      <input type="checkbox" id="phoneCheck" onchange="handleCheck(this)" />
+      <label for="phone">연락처</label>
+      <input type="tel" id="phone" name="phone" disabled="true"/>
+      <script>
+        window.onload = () => {
+          const phoneCheckBoxObject = document.querySelector("#phoneCheck")
+          const phoneInputObject = document.querySelector("#phone");
+          phoneInputObject.disabled=!phoneCheckBoxObject.checked;
+          //id값 id값
+        }
+  
+        function handleCheck(object) {
+          const phoneInputObject = document.querySelector("#phone");
+          phoneInputObject.disabled = !object.checked;
+          
+          if(!object.checked) {
+            phoneInputObject.value="";
+          }
+        }
+      </script>
+    </div>
+  
+    <div>
+      <select name="size" id="size">
+        <option value="1">SS</option>
+        <option value="2">S</option>
+        <option value="3">M</option>
+        <option value="4">L</option>
+        <option value="5">XL</option>
+      </select>
+  
+      <input type="text" name="clothes" list="dataListTest" />
+      <datalist id="dataListTest">
+        <option value="상의1">상의1</option>
+        <option value="상의2">상의2</option>
+        <option value="하의1">하의1</option>
+        <option value="하의2">하의2</option>
+      </datalist>
+    </div>
+  
+    <div>
+      <button type="button">중복확인</button>
+    </div>
+    <div>
+      <button type="submit">전송</button>
+    </div>
+  </form>
+</body>
+</html>
