@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&display=swap');
+    a {
+      text-decoration: none;
+      color: black;
+    }  
+  
+  .login-box {
+      position: relative;
+
+      box-sizing: border-box;
+      margin: 300px auto;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      width: 485px;
+      height: 310px;
+      background-color: white;
+    }
+
+    .msg-box {
+      position: absolute;
+      right: -30px;
+      top: -20px;
+      /*z-index: -1*/
+      border: 1px solid #03c75a;
+      border-radius: 25px;
+      width: 246px;
+      height: 200px;
+      background-color: white;
+      font-size: 10px;
+    }
+    .x-button {
+      transform: translate(-50%, -50%);
+      
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      left: 50%;
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="msg-box">
+      <div class="x-button">X</div>
+    </div>
+  </div>
+</body>
+</html>
