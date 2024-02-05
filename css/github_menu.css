@@ -1,0 +1,85 @@
+.side-bar-layout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #33333311; 
+}
+
+.side-bar-container {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  width: 320px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 1px 0px 10px #00000011;
+  /*x축 y축 번짐정도 투명도11*/
+}
+
+.side-bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 0px;
+  width: 100%;
+}
+
+.side-bar-logo {
+  display: flex;
+  align-items: center;
+  padding: 8px 0px 6px 8px;
+  width: 48px;
+  height: 48px;
+}
+
+.side-bar-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  margin: 8px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+  /*백그라운드 속성변할 때 0.5초안에 페이드아웃 서서히 변경 
+  호버먹었을 때*/
+  /*&는 this(자기 자신)*/
+  &:hover {
+    background-color: #f3f4f6;
+  }
+}
+
+/*.side-bar-button:hover {}*/
+
+.side-bar-main {
+  padding: 0px 8px 16px;
+  height: 100%;
+  
+}
+
+.menu-list-container {
+  border-bottom: 1px solid #dbdbdb;
+  padding: 8px;
+}
+
+.menu-list-container > li {
+  display: flex;
+  border-radius: 7px;
+  padding: 6px 8px;
+  height: 32px;
+  font-size: 14px;
+  color: #1f2328;
+  cursor: pointer;
+
+  
+  &:hover {
+    background-color: #f3f4f6;
+  }
+}
+.menu-icons {
+  margin-right: 8px;
+}
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input:active {
+        background-color: #222;
+    }
+    input:focus {
+      background-color: pink;
+    }
+    /*hover active 적용*/
+    /*브라우저 스타일 기본 갖고있는(hover active)*/
+    /*버튼 속성 바꾸면 hover active 다 바꿔줘야함.적용 리셋*/
+    button {
+      border: 1px solid red;
+      background-color: white;
+      cursor:pointer;
+    }
+
+    button:hover {
+      background-color: red;
+    }
+
+    button:active {
+      background-color: pink;
+    }
+
+    
+    /*focus 상위*/
+  </style>
+</head>
+<body>
+  <input type="text">
+  <button>확인</button>
+</body>
+</html>

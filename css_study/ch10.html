@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input[type="checkbox"]{
+      /* display:none; */
+    }
+
+    label {
+      /*label 인라인(글자수에 따라 너비)*/
+      position: relative;
+      display: block;
+      border: 1px solid #dbdbdb;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+    }
+
+    input[type="checkbox"]:checked + label > div {
+      position: absolute;
+      transform:translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      background-color: blue;
+    }
+    input[type="checkbox"]:checked + label > div:not(#ch1:checked + label > div) {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <input type="checkbox" id="ch1">
+  <label for="ch1">
+    <div></div>
+  </label>
+  <input type="checkbox" id="ch2">
+  <label for="ch2">
+    <div></div>
+  </label>
+</body>
+</html>

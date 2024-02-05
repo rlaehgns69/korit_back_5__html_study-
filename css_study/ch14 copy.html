@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*padding지정된게 중앙 중앙정렬*/
+    border: 1px solid #000;
+    padding: 10px;
+    width: 200px;
+    height: 400px;
+  }
+
+  .box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    width: 100%;
+    height: 50px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .container2 {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    /*순서대로 하고싶으면 마진*/
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+  }
+
+  .box2 {
+    border: 1px solid #000;
+    width: 100px;
+    height: 50px;
+  }
+
+
+</style>  
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <button class="btn">버튼1</button>
+    </div>
+    <div class="box">
+      <button class="btn">버튼2</button>
+    </div>
+    <div class="box">
+      <button class="btn">버튼3</button>
+    </div>
+    <div class="box">
+      <button class="btn">버튼4</button>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+  </div>
+</body>
+</html>

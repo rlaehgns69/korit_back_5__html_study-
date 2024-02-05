@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .or-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      box-sizing: border-box;
+      margin: 100px auto;
+      border: 1px solid #222;
+      padding: 20px;
+      width: 400px;
+      height: 100px;
+    }
+
+    .or-box > span {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      font-size: 50px;
+    }
+
+    .or-box > span::before, .or-box > span::after {
+      display: flex;
+      content: "";
+      flex-grow: 1;
+      border-top: 1px solid #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="or-box">
+    <span>또는</span>
+  </div>
+</body>
+</html>

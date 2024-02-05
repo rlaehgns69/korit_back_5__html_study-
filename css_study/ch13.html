@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+    /*플렉스 블록레벨요소 우측으로 정렬(display:flex), 중앙정렬 align-items, 자동으로줄바꿈(wrap)*/
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex;
+      /* flex-wrap: wrap; */
+      /*flex-wrap: wrap 자동정렬(줄바꿈)*/
+      border: 1px solid #000;
+      height: 400px;
+      /*position 안주고 원하는 방향 배치 justify-content, aligin-items*/
+    }
+    /*정중앙 position x(겹쳐야할때)*/
+    /*부모 요소 display:flex*/
+
+    .box1 {
+      border: 1px solid #000;
+      width: 100px;
+      height: 50px;
+    }
+    /*inline-block 자간*/
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    <div class="box1"></div>
+    
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="search" value="테스트검색" />
+  <input type="text" class="inputs" />
+  <input type="text" class="inputs" />
+  
+  <script>
+    const searchInput = document.getElementById("search");
+    // console.log(document.getElementById("search"));
+    console.log(searchInput.value);
+    searchInput.value="검색내용";
+    console.log(searchInput.value);
+
+    const inputs = document.getElementsByClassName("inputs");
+    console.log(inputs);
+    inputs[0].value = "aaa";
+    inputs[1].value = "bbb";
+  
+    
+    const inputs2 = document.getElementsByTagName("input");
+    console.log(inputs2);
+
+    // 선택자를 통한 요소가져오기
+    const searchInput2 = document.querySelector("#search"); // getElementById();
+    const inputs3 = document.querySelector(".inputs"); // getElementsByClassName();
+    //첫번째 .inputs 요소 
+    const inputs4 = document.querySelector("input"); // getElementsByTagName();
+    //첫번째 input 태그 요소(한개만)
+    const inputs5 = document.querySelectorAll(".inputs");// guerySelectorAll
+    // 리스트(여러개) 선택자기 때문에 고급선택자 가능
+    const inputs6 = document.querySelectorAll("input");
+    
+    // document는 html태그들(모든)
+  </script>
+  <!--스크립트 위치 끝 바디 위에-->
+  <!--스크립트 내부에 javascript 적용가능-->
+</body>
+</html>
