@@ -14,6 +14,7 @@
 
 // }
 let index =1;
+
 const appendButton = document.querySelector(".append-button");
 
 appendButton.onclick = () => {

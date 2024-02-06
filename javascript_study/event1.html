@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <input type="text" class="text-input" />
+  </div>
+  <h1 class="preview"></h1>
+  <script>
+    const textInput = document.querySelector(".text-input");
+
+    function handleChangeInputValue(event) {
+      console.log(event);
+      event.target; 
+      document.querySelector(".text-input")
+    }
+
+    textInput.onclick = handleChangeInputValue;
+
+    textInput.onchange = (e) => {
+      const preview = document.querySelector(".preview");
+      preview.innerHTML = e.target.value;
+      //preview.innerHTML = textInput.value;
+      console.log(e.keyCode);
+    }
+
+    textInput.onkeyup = (e) => {
+      if(e.keyCode === 13) {
+        alert(e.target.value);
+      }
+    }
+
+    textInput.focus();
+  </script>
+</body>
+</html>

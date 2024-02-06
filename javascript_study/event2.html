@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <input type="text" class=text-inputs placeholder="username">
+    <input type="text" class=text-inputs placeholder="password">
+    <input type="text" class=text-inputs placeholder="name">
+    <input type="text" class=text-inputs placeholder="email">
+
+    <ul>
+        <li class="preview-datas">username:</li>
+        <li class="preview-datas">password:</li>
+        <li class="preview-datas">name:</li>
+        <li class="preview-datas">email:</li>
+    </ul>
+
+    <script>
+      const inputs = document.querySelectorAll(".text-inputs");
+
+      for(let i = 0 ; i < inputs.length; i ++) {
+        inputs[i].onkeyup = (e) => {
+          if(e.keyCode == 13) {
+            inputs[i+1].focus();
+          }
+        }
+      }
+      inputs[3].onkeyup = (e) => {
+        if(e.keyCode == 13) {
+
+          for(let input of inputs) {
+            if(input.value.length === 0) {
+              input.focus();
+              return;
+            }
+          }
+
+
+          const previewDatas = document.querySelectorAll(".preview-datas");
+          for(let i = 0; i< previewDatas.length; i++) {
+            previewDatas[i].innerHTML += inputs[i].value;
+          }
+        }
+      }
+    </script>
+</body>
+</html>

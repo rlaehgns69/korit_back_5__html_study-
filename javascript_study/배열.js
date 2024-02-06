@@ -1,9 +1,10 @@
 // 자바스크립트 배열은 자바의 ArrayList와 유사
 
+// 자바스크립트 선언(빈 배열)
 let numbers1 = [];
 let numbers2 = new Array();
 
-// add x push
+// add x push(값추가), 배열[index]
 numbers1.push(10);
 console.log(numbers1);// [10]
 numbers1.push(20);
@@ -19,9 +20,11 @@ console.log(numbers1);
 console.log("===============================");
 console.log(numbers1[3]);
 console.log("===============================");
+// 자바스크립트의 배열은 자바의 ArrayList와 유사
 for(let i = 0; i < 10; i++) {
   console.log(numbers1[i]);
 }
+// 반복문 그대로
 console.log("===============================");
 
 // 향상된 for 문

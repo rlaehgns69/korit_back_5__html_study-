@@ -1,7 +1,10 @@
-// 함수 자료형x 리턴 자료형x
+// 함수 
+// 자료형x 리턴 자료형x
 function add(num1, num2) {
   console.log("num1: " + num1);
-  console.log(`num2: ${num2}`);// EL표현식 문자열 안에 변수
+  console.log(`num2: ${num2}`);// EL표현식 문자열 안에 변수(표현식)
+  console.log("aaaa" + num1 + "bbbbb" + num2 + "cccc" + num1)
+  console.log(`aaaa${num1}bbbb${num2}cccc${num1}`)
   return num1 + num2;
   // 리턴 o/x 선택
 }
@@ -9,6 +12,7 @@ function add(num1, num2) {
 console.log(add(10,20));
 
 let addFunction = add;// 자바 x
+// 변수에다가 함수를 넣을 수 있다.
 
 console.log(add) // 자바스크립트 함수 자체 값(주소값) 함수를 변수에 담을 수 있다.
 console.log(addFunction);// 변수명으로 함수 담을 수 있다.(함수이름 변경 가능)
@@ -21,17 +25,17 @@ let user = {
   addFunction: function add(a,b) {
     return a + b;
   }
-}
+} // 객체 안에 키값으로 함수를 넣을 수 있다.
 // 함수를 넣을 수 있다.
 
 console.log(user.addFunction(10, 20));
 
 // 익명함수
-let sub = function sub(a, b) {
+let sub = function (a, b) {
   return a - b;
 } // 함수를 변수에 넣고 변수명으로 함수를 사용 가능
 // 함수의 이름 없어도 된다. 변수에 대입가능 하기 때문에 익명함수
-
+sub = (a,b) => a-b;
 let result1 = sub(10, 5);
 console.log(result1);
 // 변수명으로 함수를 사용

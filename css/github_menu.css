@@ -1,4 +1,5 @@
 .side-bar-layout {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -7,7 +8,15 @@
   background-color: #33333311; 
 }
 
+.side-bar-show {
+  display: block;
+}
+
 .side-bar-container {
+  position: absolute;
+  top: 0px;
+  left: -320px;
+  transition: left 0.5s ease-in-out ;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   width: 320px;
@@ -15,6 +24,10 @@
   background-color: white;
   box-shadow: 1px 0px 10px #00000011;
   /*x축 y축 번짐정도 투명도11*/
+}
+
+.side-bar-container-show {
+  left: 0;
 }
 
 .side-bar-header {
