@@ -4,3 +4,81 @@ main {
   width: 100%;
   height: 500px;
 }
+
+.todo-content-list {
+  padding: 0px 10px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.todo-content-box {
+  margin-bottom: 10px;
+  border: 1px solid #dbdbdb;
+  width: 100%;
+  height: 400px;
+  box-shadow: 0px 0px 10px #00000030;
+}
+
+.todo-content-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+  & > span:nth-of-type(1) > i {
+    margin: 0px 10px;
+    color: #1a89ff;
+  }
+}
+
+.todo-content-date {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.todo-content-main {
+  margin: 0px 10px;
+  border: 1px solid #dbdbdb;
+  height: 300px;
+}
+
+.todo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.todo-content-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+}
+
+.todo-edit-button {
+  border: none;
+  margin-right: 5px;
+  width: 32px;
+  height: 32px;
+  background-color: #ffcc96;
+  
+  & > i {
+    color: brown;
+  }/*아이콘 하위 i 이탤릭*/
+}
+.todo-remove-button {
+  border: none;
+  margin-right: 5px;
+  width: 32px;
+  height: 32px;
+  background-color: #ff7f7f;
+  & > i {
+    color: brown;
+  }
+}
+

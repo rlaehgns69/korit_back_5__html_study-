@@ -1,4 +1,4 @@
-const submitButton = document.querySelector(".input-submit")
+const submitButton = document.querySelector(".input-submit");
 
 submitButton.onclick= () => {
   //alert("알림창");

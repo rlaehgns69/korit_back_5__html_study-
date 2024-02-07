@@ -36,6 +36,7 @@
 }
 
 .todo-input {
+  text-align: center;
   outline: none;
   border: 1px solid #dbdbdb;
   padding: 10px;
