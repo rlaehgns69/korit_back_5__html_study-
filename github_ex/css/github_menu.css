@@ -42,6 +42,7 @@
  width: 32px; 
  height: 32px;
  cursor: pointer;
+ background-color: white;
  transition: background-color 0.5s ease-in-out;
 
  &:hover {

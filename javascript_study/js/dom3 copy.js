@@ -1,12 +1,11 @@
-/*
- let index =1;
+/* let index =1;
  class=input-submit
  const submitButton=document.querySelector(".input-submit");
  const submitButton=document.querySelector(".input-submit");
  submitButton.onclick = () => {
   
   const input = document.querySelectorAll("input");
-
+  
  }
  submitButton.onclick= () => {
 
@@ -20,9 +19,7 @@
    <th>${input.values[2]}</th>
    <th>${input.values[3]}</th>
    </tr>`
-
-*/
-let index =1;
+   let index =1;
 
 const appendButton = document.querySelector(".append-button");
 
@@ -42,5 +39,29 @@ appendButton.onclick = () => {
 
   for(let input of textInputs) {
     input.value="";
+  }
+}
+
+ }*/
+let index = 1;
+
+const submitButton = document.querySelector(".input-submit");
+
+submitButton.onclick = () => {
+  const textInput = document.querySelectorAll(".input");
+  const dataTableBody = document.querySelector(".data-table-body");
+
+  dataTableBody.innerHTML += `
+  <tr>
+    <td>${index}</td>
+    <td>${textInput[0].value}</td>
+    <td>${textInput[1].value}</td>
+    <td>${textInput[2].value}</td>
+  </tr>
+  `;
+  index++;
+
+  for(let input of textInput) {
+    input.value = "";
   }
 }
