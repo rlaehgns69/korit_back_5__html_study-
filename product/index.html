@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <input type="text" class="product-inputs" placeholder="상품명"/>
+    <input type="text" class="product-inputs" placeholder="가격"/>
+    <input type="text" class="product-inputs" placeholder="사이즈"/>
+    <button class="add-button" onclick="handleAddClick();">추가</button>
+  </div>
+  <div>
+    <button class="search-button" onclick="handleSearchClick();">조회</button>
+    <table>
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>상품명</th>
+          <th>가격</th>
+          <th>사이즈</th>
+        </tr>
+      </thead>
+      <tbody class="product-list">
+
+      </tbody>
+    </table>
+  </div>
+  <script src="js/insert_product.js"></script>
+</body>
+</html>
