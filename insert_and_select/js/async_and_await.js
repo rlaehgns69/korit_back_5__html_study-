@@ -77,7 +77,7 @@ function handleSubmitClick() {
   // 리턴 다음 then(매개변수)
   // 비동기 비동기 비동기(동기처리)
 
-  //p1.then().catch가능 객체.then(()=>{}).
+  // p1.then().catch가능 객체.then(()=>{}).
 
   // reject호출 catch 동작
   p1.catch(() => {
