@@ -14,29 +14,17 @@ function main() {
 
 function gugudan(time, name) {
   const p = new Promise((resolve) => {
-    console.log(`${name}: 구구단 외워와!!`);
-    resolve(() => {
-      setTimeout(() => {
-        console.log(`${name}: 다외웠어요!!!`);
-      }, time * 1000); //setTimeout 별도로 동작 
-    });
-  });//Promise객체 생성 p대입 안해도됨. 생성되는 순간 실행
-  //1
+    console.log(`${name}: 구구단 외워와!!`);// 1번
 
-  // function resolve(result) {
-  //   result();
-  // }
+    setTimeout(() => {
+      console.log(`${name}: 다외웠어요!!!`);
+      resolve("완료!!!"); //비동기로 실행하면됨.
+    }, time * 1000); //4초 1초
 
-  //p.then(() => {});
-  // p.then(resolve);
-  p.then((result)=>{
-    result();//resolve의 함수
-    return "완료";//비동기라서 다음 then
-  }).then((result) =>{
-   console.log(result); 
   });
-  // promise -> reolve then->then
-  // resolve->then->함수 실행(함수자체가 resolve)
-
+  //resolve호출 then
+  p.then((result)=>{
+    console.log(result);
+  });
   
 }
