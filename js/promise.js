@@ -24,10 +24,10 @@ function gugudan(index, time, name) {
 
     setTimeout(() => {
       console.log(`${name}: 다외웠어요!!!`);
-      complet = complet.map((value, cIndex) => cIndex !== index ? value : true) //변수 넣는 게 동기 상태 
+      //complet = complet.map((value, cIndex) => cIndex !== index ? value : true) //변수 넣는 게 동기 상태 
       // useState set동작 상태의 값이 바뀌면 렌더링이 일어나면서 값이 들어감.
       // 값이 들어가기전에 set a set =0 b set10 a를 사용하기도 전에 b 사용 상태 사용 x 일반변수
-      resolve(true);// 4초뒤에 실행 // 누가 완료했는지 배열에 담는다
+      resolve(index);// 4초뒤에 실행 // 누가 완료했는지 배열에 담는다
     }, time * 1000); //김준이(1초)의 값이 배열에 매번확인 배열
 
   });
