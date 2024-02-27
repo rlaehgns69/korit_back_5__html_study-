@@ -14,3 +14,4 @@ function main() {
   });
   console.log(3);
 }
+// 일반적인 Promise함수
